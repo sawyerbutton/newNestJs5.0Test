@@ -31,6 +31,11 @@ let UserService = class UserService {
             return yield this.userRepository.find();
         });
     }
+    addUser(user) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.userRepository.save(user);
+        });
+    }
 };
 UserService = __decorate([
     common_1.Component(),

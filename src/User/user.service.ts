@@ -11,4 +11,8 @@ export class UserService {
  public async getAllUser():Promise<Array<UserEntity>>{
    return await this.userRepository.find();
  }
+
+ public async addUser(user:any):Promise<UserEntity>{
+   return await this.userRepository.save(user);
+ }
 }
