@@ -15,11 +15,12 @@ exports.databaseProvider = [
         useFactory: () => __awaiter(this, void 0, void 0, function* () {
             return yield typeorm_1.createConnection({
                 type: 'postgres',
-                host: 'localhost',
+                host: 'ec2-54-235-64-195.compute-1.amazonaws.com',
                 port: 5432,
-                username: "admin",
-                password: "12345",
-                database: 'test',
+                username: "tmvjttsvgegung",
+                password: "d36741096832a4f6eeb5c51adad42c7acf3a6e4eaab4272e05779648e426a63c",
+                database: 'dak5jar3nm445n',
+                url: 'postgres://tmvjttsvgegung:d36741096832a4f6eeb5c51adad42c7acf3a6e4eaab4272e05779648e426a63c@ec2-54-235-64-195.compute-1.amazonaws.com:5432/dak5jar3nm445n',
                 entities: [
                     __dirname + '/../**/*.entity{.ts,.js}',
                 ],
